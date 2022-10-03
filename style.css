@@ -1,0 +1,261 @@
+body{
+  height: 100vh;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans",sans-serif;
+  
+}
+.nav{
+  padding: 10px 0;
+  align-items: center;
+}
+.nav img{
+  width: 30%;
+}
+.nav .btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding:0 20px 
+}
+.nav button{
+  padding: 10px 30px;
+  width: 40%;
+  border-radius: 50px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.hero-sec{
+  background-size: cover;
+  background-color:#ecf7ff; 
+  background-image: url("images/bg-hero-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+.description{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+  
+}
+.description h3{
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color:  hsl(192, 100%, 9%);
+}
+.description p{
+  color:  hsl(192, 100%, 9%);
+  font-weight: 500;
+  line-height:22px;
+  margin-bottom: 20px;
+}
+.description button{
+  width: 50%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color:  hsl(322, 100%, 66%);
+  border: 0;
+  color:white ;
+  font-weight: 700;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.description button:hover{
+  background-color: hsl(322, 100%, 82%) ;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: black;
+}
+/* /////////////////////////////////////////////////////////////// */
+ /* CARDS */
+/* /////////////////////////////////////////////////////////// */
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.img-container{
+  padding: 30px 20px;
+  
+}
+img{
+  width: 100%;
+}
+.content{
+  padding: 0 80px;
+}
+.card h4{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card p{
+  color: hsl(208, 11%, 55%) ;
+}
+.users{
+  margin-bottom: 200px;
+}
+/* Try out card */
+.try-out{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  position: absolute;
+  transform: translateX(50%) translateY(-75%);
+
+}
+.try-out button{
+  margin-top: 20px;
+  width: 50%;
+  padding: 20px 10px;
+  border-radius: 50px;
+  background-color:  hsl(322, 100%, 66%);
+  border: 0;
+}
+.try-out button:hover{
+  background-color: hsl(322, 100%, 82%) ;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: black;
+}
+.try-out a{
+  color:white ;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* ///////////////////////////////////////////////// */
+
+.img-footer{
+  width: 20%;
+  filter: brightness(0) invert(1);
+}
+.footer{
+  padding: 150px 0 40px;
+  background-color:  hsl(192, 100%, 9%);
+  color: white;
+}
+.list{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+  line-height: 30px;
+  
+}
+li a{
+  text-decoration: none;
+  color: white;
+}
+.logo{
+  border-radius: 50%;
+  background-color: hsl(192, 100%, 9%) ;
+  padding: 5px;
+  border: 1px solid white;
+}
+.copyrit{
+  text-align: end;
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+
+/* Media Queries */
+@media all and (max-width:460px){
+  body{
+    margin: 0 auto;
+  }
+
+  .nav{
+    margin-bottom: 50px;
+  }
+  .nav img{
+    width: 80%;
+  }
+  .nav button{
+    width: 100%;
+  }
+ .description{
+  text-align: center;
+  padding: 10px;
+ }
+  .description h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .description p{
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .description button{
+  margin: 0 auto 30px;
+
+  width: 80%;
+  }
+
+/* Card sec */
+  .card {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .card:nth-child(odd){
+    flex-direction: column-reverse;
+  }
+  .card .content{
+    text-align: center;
+    padding: 10px 25px;
+  }
+  .users{
+    margin-bottom:30px ;
+  }
+
+/* Footer */
+.img-footer{
+  width: 40%;
+}
+.company{
+  margin-top: 0;
+}
+.social-link{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+.logo{
+  margin: 0 5px;
+}
+.copyrit{
+  text-align: center;
+}
+/* Try-out card */
+.try-out{
+  position: relative;
+  width:90%;
+  transform:translate(0, 60%);
+  padding: 20px;
+}
+
+.try-out button{
+ width: 80%;
+ margin-bottom: 20px;
+}
+.try-out h4{
+  text-align: center;
+  padding: 0 10px;
+}
+}
